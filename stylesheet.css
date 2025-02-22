@@ -8,27 +8,28 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-/*     background: #ff5733; */
-    background-image: url("video.mp4");
+    background: black; /* Fallback for the video */
+    overflow: hidden;
 }
 
 #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
-    max-width: 100%;
-    /* max-height: 100%; */
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
     z-index: -1;
-  }
+}
 
 .container {
-    background: white;
     padding: 40px;
-    width: 50%;
+    width: 90%;
     max-width: 400px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(20px);
 }
 
 .container:hover {
@@ -36,19 +37,19 @@ body {
 }
 
 h2 {
-    color: #ff5733;
+    color: white;
     margin-bottom: 10px;
 }
 
 p {
-    color: #555;
+    color: white;
     font-size: 14px;
     margin-bottom: 15px;
 }
 
 input {
-    width: 80%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: 2px solid #ff5733;
     border-radius: 8px;
     font-size: 16px;
@@ -84,4 +85,47 @@ button:hover {
     font-size: 18px;
     color: #333;
     font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
 }
