@@ -8,8 +8,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #ff5733;
-/*     background-image: url("image.jpg"); */
+/*     background: #ff5733; */
+    background-image: url("video.mp4");
 }
 
 #myVideo {
