@@ -17,8 +17,8 @@ document.getElementById("submit-btn").addEventListener("click", function () {
             let luckyNumbers = moolankFriends.filter(num => bhagyankFriends.includes(num));
             
             document.getElementById("yourdetails").innerHTML = `
-                <p>Your Moolank is: <strong>${moolank}</strong></p>
-                <p>Your Bhagyank is: <strong>${bhagyank}</strong></p>
+                <p>Your Psychic number is: <strong>${moolank}</strong></p>
+                <p>Your Destiny number is: <strong>${bhagyank}</strong></p>
                 <p>Your Lucky Number(s): <strong>${luckyNumbers.join(", ") || "None"}</strong></p>
             `;
         })
