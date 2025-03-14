@@ -37,6 +37,12 @@ The **Find Lucky Number** project is a simple web application built using **HTML
 
 *(Include screenshots here if available to showcase the UI.)*
 
+<img width="958" alt="image" src="https://github.com/user-attachments/assets/f3d3aa8b-47c6-49b2-b6c8-059565ed8fd9" />
+
+<img width="943" alt="image" src="https://github.com/user-attachments/assets/7a936056-8ed0-44f1-9f21-3942d3274eba" />
+
+
+
 ---
 
 ## 🚀 Installation & Usage
